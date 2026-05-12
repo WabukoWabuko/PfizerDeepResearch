@@ -3,435 +3,482 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-    <title>The Pfizer Files | Investigative Analysis</title>
+<title>
+The Pfizer Files
+</title>
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+rel="stylesheet">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/navbar.css">
-    <link rel="stylesheet" href="assets/css/hero.css">
-    <link rel="stylesheet" href="assets/css/cards.css">
-    <link rel="stylesheet" href="assets/css/animations.css">
+<link rel="stylesheet"
+href="assets/css/style.css">
 
-    <!-- Icons -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet"
+href="assets/css/navbar.css">
+
+<link rel="stylesheet"
+href="assets/css/hero.css">
+
+<link rel="stylesheet"
+href="assets/css/cards.css">
+
+<link rel="stylesheet"
+href="assets/css/loader.css">
+
+<link rel="stylesheet"
+href="assets/css/timeline.css">
+
+<link rel="stylesheet"
+href="assets/css/references.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
+<div class="loader-wrapper">
 
-    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+    <div class="loader-circle"></div>
 
-        <div class="container">
+    <h2>
+        Loading Investigation...
+    </h2>
 
-            <a class="navbar-brand fw-bold" href="index.html">
-                THE PFIZER FILES
-            </a>
+</div>
 
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<div id="progress-bar"></div>
 
-            <div class="collapse navbar-collapse" id="menu">
+<button id="topBtn">
 
-                <ul class="navbar-nav ms-auto">
+    <i class="fa-solid fa-arrow-up"></i>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="timeline.html">
-                            Timeline
-                        </a>
-                    </li>
+</button>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="legal.html">
-                            Legal Battle
-                        </a>
-                    </li>
+<nav class="navbar navbar-expand-lg fixed-top custom-navbar">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="documents.html">
-                            Documents
-                        </a>
-                    </li>
+<div class="container">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="biodistribution.html">
-                            Biodistribution
-                        </a>
-                    </li>
+<a class="navbar-brand"
+href="#">
+THE PFIZER FILES
+</a>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="surveillance.html">
-                            Surveillance
-                        </a>
-                    </li>
+<button class="navbar-toggler"
+data-bs-toggle="collapse"
+data-bs-target="#menu">
 
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-primary ms-2 px-4">
-                            Investigate
-                        </a>
-                    </li>
+<span class="navbar-toggler-icon"></span>
 
-                </ul>
+</button>
 
-            </div>
+<div class="collapse navbar-collapse"
+id="menu">
 
-        </div>
+<ul class="navbar-nav ms-auto">
 
-    </nav>
+<li class="nav-item">
+<a class="nav-link"
+href="timeline.html">
+Timeline
+</a>
+</li>
 
-    <!-- HERO -->
+<li class="nav-item">
+<a class="nav-link"
+href="documents.html">
+Documents
+</a>
+</li>
 
-    <section class="hero-section">
+<li class="nav-item">
+<a class="nav-link"
+href="references.html">
+References
+</a>
+</li>
 
-        <div id="particles-js"></div>
+<li class="nav-item">
+<a class="nav-link"
+href="faq.html">
+FAQ
+</a>
+</li>
 
-        <div class="container">
+</ul>
 
-            <div class="row align-items-center min-vh-100">
+</div>
 
-                <div class="col-lg-7">
+</div>
 
-                    <span class="hero-badge">
-                        Investigative Deep Dive
-                    </span>
+</nav>
 
-                    <h1 class="hero-title">
-                        THE PFIZER FILES
-                        <span>
-                            Deep Dive Continuation
-                        </span>
-                    </h1>
+<section class="hero-section">
 
-                    <p class="hero-text">
-                        A large-scale investigative website documenting allegations,
-                        regulatory responses, trial integrity concerns, biodistribution studies,
-                        adverse event monitoring, whistleblower claims, and transparency debates
-                        surrounding the Pfizer COVID-19 vaccine data releases.
-                    </p>
+<div class="container">
 
-                    <div class="hero-buttons">
+<div class="row align-items-center min-vh-100">
 
-                        <a href="timeline.html" class="btn btn-primary btn-lg px-5">
-                            Explore Timeline
-                        </a>
+<div class="col-lg-7">
 
-                        <a href="documents.html" class="btn btn-outline-light btn-lg px-5">
-                            Read Documents
-                        </a>
+<span class="hero-badge">
 
-                    </div>
+Investigative Deep Dive
 
-                </div>
+</span>
 
-                <div class="col-lg-5">
+<h1 class="hero-title mt-4">
 
-                    <div class="glass-card">
+THE PFIZER FILES
 
-                        <h3>
-                            Investigation Summary
-                        </h3>
+<span>
 
-                        <div class="summary-item">
-                            <span>1.2M+</span>
-                            <p>Pages Released</p>
-                        </div>
+Deep Dive Continuation
 
-                        <div class="summary-item">
-                            <span>42,086</span>
-                            <p>Adverse Event Cases</p>
-                        </div>
+</span>
 
-                        <div class="summary-item">
-                            <span>153</span>
-                            <p>Total Trial Sites</p>
-                        </div>
+</h1>
 
-                        <div class="summary-item">
-                            <span>9</span>
-                            <p>FDA Inspections</p>
-                        </div>
+<p class="hero-text">
 
-                    </div>
+A large-scale investigative platform
+exploring whistleblower allegations,
+trial integrity concerns,
+biodistribution studies,
+post-marketing surveillance,
+FDA oversight,
+pharmacovigilance,
+and transparency debates.
 
-                </div>
+</p>
 
-            </div>
+<div class="hero-buttons">
 
-        </div>
+<a href="timeline.html"
+class="btn btn-primary">
 
-    </section>
+Explore Timeline
 
-    <!-- FEATURED SECTIONS -->
+</a>
 
-    <section class="featured-section py-5">
+<a href="documents.html"
+class="btn btn-outline-light">
 
-        <div class="container">
+Read Documents
 
-            <div class="section-header text-center">
+</a>
 
-                <h2>
-                    Explore The Full Investigation
-                </h2>
+</div>
 
-                <p>
-                    Navigate through detailed timelines, legal battles,
-                    biodistribution studies, adverse event monitoring,
-                    regulatory failures, and scientific context.
-                </p>
+</div>
 
-            </div>
+<div class="col-lg-5">
 
-            <div class="row g-4 mt-4">
+<div class="hero-stats">
 
-                <!-- CARD -->
+<div class="stat-card">
 
-                <div class="col-lg-4 col-md-6">
+<h2 class="counter"
+data-target="1200000">
+0
+</h2>
 
-                    <div class="feature-card">
+<p>
+Pages Released
+</p>
 
-                        <div class="icon-box">
-                            <i class="fa-solid fa-clock"></i>
-                        </div>
+</div>
 
-                        <h3>
-                            Ventavia Timeline
-                        </h3>
+<div class="stat-card">
 
-                        <p>
-                            Detailed whistleblower timeline documenting events,
-                            evidence collection, FDA reporting, and alleged protocol violations.
-                        </p>
+<h2 class="counter"
+data-target="42086">
+0
+</h2>
 
-                        <a href="timeline.html" class="read-more">
-                            Explore Timeline
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
+<p>
+Adverse Cases
+</p>
 
-                    </div>
+</div>
 
-                </div>
+<div class="stat-card">
 
-                <!-- CARD -->
+<h2 class="counter"
+data-target="153">
+0
+</h2>
 
-                <div class="col-lg-4 col-md-6">
+<p>
+Trial Sites
+</p>
 
-                    <div class="feature-card">
+</div>
 
-                        <div class="icon-box">
-                            <i class="fa-solid fa-scale-balanced"></i>
-                        </div>
+<div class="stat-card">
 
-                        <h3>
-                            Legal Analysis
-                        </h3>
+<h2 class="counter"
+data-target="9">
+0
+</h2>
 
-                        <p>
-                            Full breakdown of the False Claims Act lawsuit,
-                            court findings, dismissal reasoning, and government position.
-                        </p>
+<p>
+FDA Inspections
+</p>
 
-                        <a href="legal.html" class="read-more">
-                            Read Legal Case
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
+</div>
 
-                    </div>
+</div>
 
-                </div>
+</div>
 
-                <!-- CARD -->
+</div>
 
-                <div class="col-lg-4 col-md-6">
+</div>
 
-                    <div class="feature-card">
+</section>
 
-                        <div class="icon-box">
-                            <i class="fa-solid fa-file-waveform"></i>
-                        </div>
+<section class="py-5">
 
-                        <h3>
-                            Released Documents
-                        </h3>
+<div class="container">
 
-                        <p>
-                            Analysis of document releases, pharmacovigilance reports,
-                            safety monitoring data, and transparency debates.
-                        </p>
+<div class="section-header text-center mb-5">
 
-                        <a href="documents.html" class="read-more">
-                            View Documents
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
+<h2 class="section-title">
 
-                    </div>
+Featured Investigation Areas
 
-                </div>
+</h2>
 
-            </div>
+<p class="section-subtitle mx-auto">
 
-        </div>
+Explore detailed investigations,
+scientific reviews,
+regulatory analysis,
+adverse event reports,
+legal proceedings,
+and clinical trial data.
 
-    </section>
+</p>
 
-    <!-- REFERENCES -->
+</div>
 
-    <section class="references-section py-5">
+<div class="row g-4">
 
-        <div class="container">
+<div class="col-lg-4">
 
-            <div class="row">
+<div class="feature-card">
 
-                <div class="col-lg-6">
+<div class="icon-box">
 
-                    <h2 class="mb-4">
-                        Primary References
-                    </h2>
+<i class="fa-solid fa-clock"></i>
 
-                    <ul class="reference-list">
+</div>
 
-                        <li>
-                            BMJ Investigation — Ventavia Research Group
-                        </li>
+<h3>
+Ventavia Timeline
+</h3>
 
-                        <li>
-                            FDA FOIA Document Releases
-                        </li>
+<p>
 
-                        <li>
-                            PHMPT Court Filings
-                        </li>
+Detailed chronology of whistleblower
+claims,
+management communication,
+FDA reporting,
+and protocol concerns.
 
-                        <li>
-                            Fraiman et al. Serious Adverse Events Study (2022)
-                        </li>
+</p>
 
-                        <li>
-                            CDC & FDA Myocarditis Safety Communications
-                        </li>
+<a href="timeline.html"
+class="read-more">
 
-                        <li>
-                            EMA Assessment Reports
-                        </li>
+Explore Timeline
 
-                        <li>
-                            VAERS Public Data System
-                        </li>
+<i class="fa-solid fa-arrow-right"></i>
 
-                    </ul>
+</a>
 
-                </div>
+</div>
 
-                <div class="col-lg-6">
+</div>
 
-                    <div class="reference-box">
+<div class="col-lg-4">
 
-                        <h3>
-                            Research Transparency Notice
-                        </h3>
+<div class="feature-card">
 
-                        <p>
-                            This project aggregates publicly discussed information,
-                            court records, scientific analyses, pharmacovigilance data,
-                            and media investigations. It aims to provide contextualized
-                            exploration rather than selective interpretation.
-                        </p>
+<div class="icon-box">
 
-                        <a href="documents.html" class="btn btn-primary">
-                            Read Full Analysis
-                        </a>
+<i class="fa-solid fa-scale-balanced"></i>
 
-                    </div>
+</div>
 
-                </div>
+<h3>
+Legal Battle
+</h3>
 
-            </div>
+<p>
 
-        </div>
+Breakdown of the lawsuit,
+court findings,
+dismissal reasoning,
+and the government's position.
 
-    </section>
+</p>
 
-    <!-- FOOTER -->
+<a href="legal.html"
+class="read-more">
 
-    <footer class="footer-section">
+View Legal Analysis
 
-        <div class="container">
+<i class="fa-solid fa-arrow-right"></i>
 
-            <div class="row">
+</a>
 
-                <div class="col-lg-5">
+</div>
 
-                    <h3>
-                        THE PFIZER FILES
-                    </h3>
+</div>
 
-                    <p>
-                        Investigative research platform exploring transparency,
-                        pharmacovigilance, regulatory oversight, and scientific context.
-                    </p>
+<div class="col-lg-4">
 
-                </div>
+<div class="feature-card">
 
-                <div class="col-lg-3">
+<div class="icon-box">
 
-                    <h5>
-                        Navigation
-                    </h5>
+<i class="fa-solid fa-file-waveform"></i>
 
-                    <ul>
-                        <li><a href="timeline.html">Timeline</a></li>
-                        <li><a href="legal.html">Legal</a></li>
-                        <li><a href="documents.html">Documents</a></li>
-                        <li><a href="surveillance.html">Surveillance</a></li>
-                    </ul>
+</div>
 
-                </div>
+<h3>
+Document Releases
+</h3>
 
-                <div class="col-lg-4">
+<p>
 
-                    <h5>
-                        Developer & Researcher
-                    </h5>
+Analysis of FDA releases,
+pharmacovigilance records,
+and post-marketing surveillance.
 
-                    <p>
-                        WabukoWabuko
-                    </p>
+</p>
 
-                    <p>
-                        Email:
-                        basilwabbs@gmail.com
-                    </p>
+<a href="documents.html"
+class="read-more">
 
-                    <p>
-                        Portfolio:
-                        wabuko-portfolio.vercel.app
-                    </p>
+Read Documents
 
-                </div>
+<i class="fa-solid fa-arrow-right"></i>
 
-            </div>
+</a>
 
-        </div>
+</div>
 
-    </footer>
+</div>
 
-    <!-- SCRIPTS -->
+</div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</div>
 
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</section>
 
-    <script src="assets/js/app.js"></script>
-    <script src="assets/js/navbar.js"></script>
-    <script src="assets/js/particles.js"></script>
+<section class="py-5">
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-lg-6">
+
+<h2 class="section-title">
+
+Adverse Event Analysis
+
+</h2>
+
+<p class="section-subtitle">
+
+Interactive visualization
+showing categories frequently discussed
+in public safety monitoring systems.
+
+</p>
+
+</div>
+
+<div class="col-lg-6">
+
+<canvas id="adverseChart"></canvas>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer class="py-5">
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-lg-6">
+
+<h3>
+THE PFIZER FILES
+</h3>
+
+<p class="text-muted-custom">
+
+Investigative research platform
+focused on transparency,
+public health communication,
+and scientific context.
+
+</p>
+
+</div>
+
+<div class="col-lg-6">
+
+<h4>
+Developer & Researcher
+</h4>
+
+<p>
+WabukoWabuko
+</p>
+
+<p>
+basilwabbs@gmail.com
+</p>
+
+<p>
+wabuko-portfolio.vercel.app
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="assets/js/app.js"></script>
+<script src="assets/js/navbar.js"></script>
+<script src="assets/js/progress.js"></script>
+<script src="assets/js/topbtn.js"></script>
+<script src="assets/js/counter.js"></script>
+<script src="assets/js/chart.js"></script>
 
 </body>
 

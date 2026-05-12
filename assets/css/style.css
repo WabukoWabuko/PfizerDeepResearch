@@ -2,97 +2,140 @@
 
 :root{
 
-    --bg:#050816;
-    --card:#111827;
     --primary:#00d4ff;
     --secondary:#7c3aed;
-    --text:#f9fafb;
+    --bg:#020617;
+    --bg2:#0f172a;
+    --card:#111827;
+    --text:#f8fafc;
     --muted:#94a3b8;
     --border:rgba(255,255,255,0.08);
 
 }
 
 *{
+
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Inter', sans-serif;
+    font-family:'Inter',sans-serif;
+    scroll-behavior:smooth;
+
 }
 
 body{
 
-    background:linear-gradient(to bottom,#020617,#0f172a);
+    background:linear-gradient(to bottom,var(--bg),var(--bg2));
     color:var(--text);
     overflow-x:hidden;
+    position:relative;
+
+}
+
+body::before{
+
+    content:'';
+    position:fixed;
+    inset:0;
+    background:
+        radial-gradient(circle at top left,
+        rgba(0,212,255,0.12),
+        transparent 35%),
+
+        radial-gradient(circle at bottom right,
+        rgba(124,58,237,0.12),
+        transparent 35%);
+
+    z-index:-1;
 
 }
 
 a{
+
     text-decoration:none;
+
 }
 
-.section-header h2{
+img{
+
+    width:100%;
+    display:block;
+
+}
+
+.container{
+
+    position:relative;
+    z-index:2;
+
+}
+
+.section-title{
 
     font-size:3rem;
     font-weight:900;
+    margin-bottom:20px;
 
 }
 
-.section-header p{
+.section-subtitle{
 
     color:var(--muted);
-    max-width:700px;
-    margin:auto;
+    max-width:800px;
+    line-height:1.8;
 
 }
 
-.glass-card{
+.glass{
 
     background:rgba(255,255,255,0.04);
     border:1px solid var(--border);
-    padding:40px;
+    backdrop-filter:blur(12px);
     border-radius:24px;
-    backdrop-filter:blur(14px);
 
 }
 
-.summary-item{
+.btn-primary{
 
-    margin-top:25px;
-
-}
-
-.summary-item span{
-
-    font-size:2rem;
-    font-weight:900;
-    color:var(--primary);
+    background:linear-gradient(to right,var(--primary),var(--secondary));
+    border:none;
+    padding:14px 28px;
+    font-weight:700;
+    border-radius:14px;
 
 }
 
-.footer-section{
+.btn-primary:hover{
 
-    padding:80px 0;
-    background:#020617;
-    border-top:1px solid var(--border);
+    transform:translateY(-3px);
 
 }
 
-.footer-section ul{
-
-    list-style:none;
-    padding:0;
-
-}
-
-.footer-section ul li{
-
-    margin-bottom:10px;
-
-}
-
-.footer-section ul li a{
+.text-muted-custom{
 
     color:var(--muted);
+
+}
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+    border-radius:20px;
+
+}
+
+@media(max-width:768px){
+
+    .section-title{
+
+        font-size:2rem;
+
+    }
 
 }

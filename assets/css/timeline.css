@@ -1,0 +1,46 @@
+.timeline-wrapper{
+
+    position:relative;
+    padding-left:40px;
+    margin-top:60px;
+    border-left:3px solid var(--primary);
+
+}
+
+.timeline-card{
+
+    position:relative;
+    margin-bottom:50px;
+    padding:30px;
+    border-radius:24px;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,255,255,0.08);
+
+}
+
+.timeline-card::before{
+
+    content:'';
+    position:absolute;
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    background:var(--primary);
+    left:-51px;
+    top:30px;
+
+}
+
+.timeline-card h3{
+
+    color:var(--primary);
+    margin-bottom:20px;
+
+}
+
+.timeline-card p{
+
+    color:var(--muted);
+    line-height:1.8;
+
+}

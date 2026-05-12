@@ -1,15 +1,11 @@
-window.addEventListener("scroll", () => {
+window.addEventListener("scroll",()=>{
 
-    const navbar = document.querySelector(".custom-navbar");
+    const navbar =
+        document.querySelector(".custom-navbar");
 
-    if(window.scrollY > 50){
-
-        navbar.classList.add("scrolled");
-
-    }else{
-
-        navbar.classList.remove("scrolled");
-
-    }
+    navbar.classList.toggle(
+        "scrolled",
+        window.scrollY > 50
+    );
 
 });
