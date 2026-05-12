@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+
+    --bg:#050816;
+    --card:#111827;
+    --primary:#00d4ff;
+    --secondary:#7c3aed;
+    --text:#f9fafb;
+    --muted:#94a3b8;
+    --border:rgba(255,255,255,0.08);
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter', sans-serif;
+}
+
+body{
+
+    background:linear-gradient(to bottom,#020617,#0f172a);
+    color:var(--text);
+    overflow-x:hidden;
+
+}
+
+a{
+    text-decoration:none;
+}
+
+.section-header h2{
+
+    font-size:3rem;
+    font-weight:900;
+
+}
+
+.section-header p{
+
+    color:var(--muted);
+    max-width:700px;
+    margin:auto;
+
+}
+
+.glass-card{
+
+    background:rgba(255,255,255,0.04);
+    border:1px solid var(--border);
+    padding:40px;
+    border-radius:24px;
+    backdrop-filter:blur(14px);
+
+}
+
+.summary-item{
+
+    margin-top:25px;
+
+}
+
+.summary-item span{
+
+    font-size:2rem;
+    font-weight:900;
+    color:var(--primary);
+
+}
+
+.footer-section{
+
+    padding:80px 0;
+    background:#020617;
+    border-top:1px solid var(--border);
+
+}
+
+.footer-section ul{
+
+    list-style:none;
+    padding:0;
+
+}
+
+.footer-section ul li{
+
+    margin-bottom:10px;
+
+}
+
+.footer-section ul li a{
+
+    color:var(--muted);
+
+}
