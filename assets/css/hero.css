@@ -1,0 +1,59 @@
+.hero-section{
+
+    position:relative;
+    min-height:100vh;
+    overflow:hidden;
+
+}
+
+.hero-title{
+
+    font-size:5rem;
+    font-weight:900;
+    line-height:1.1;
+
+}
+
+.hero-title span{
+
+    display:block;
+    color:var(--primary);
+
+}
+
+.hero-text{
+
+    margin-top:25px;
+    color:var(--muted);
+    font-size:1.1rem;
+    line-height:1.8;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+    gap:20px;
+    margin-top:40px;
+    flex-wrap:wrap;
+
+}
+
+.hero-badge{
+
+    padding:10px 22px;
+    border-radius:40px;
+    background:rgba(0,212,255,0.1);
+    color:var(--primary);
+
+}
+
+#particles-js{
+
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+
+}
